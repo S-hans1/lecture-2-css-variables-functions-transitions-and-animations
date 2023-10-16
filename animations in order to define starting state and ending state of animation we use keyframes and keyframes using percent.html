@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ 
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: orange;
+            border: 1px solid black;
+
+        }
+
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(32, 19, 220);
+            color: aliceblue;
+            border: 3px solid black;
+            margin: 5em;
+
+
+            animation-name: Supriya;
+            animation-duration: 3s;
+            animation-iteration-count:4;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in-out;
+            animation-delay: 2s;
+            /* animation-direction: normal; */
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+            animation-play-state: ;
+        }
+
+        @keyframes Supriya {
+            
+            0%{
+             width: 10%;
+             background-color: aqua;   
+            }
+
+            40%{
+                width: 35%;
+                background-color: green;
+
+            }
+
+            65%{
+                width: 55%;
+                background-color: blueviolet;
+
+            }
+
+            100%{
+                width: 75%;
+                background-color: brown;
+
+            }
+
+
+        }
+        
+        /* @keyframes Supriya {
+            from{
+                width:200px;
+            }
+            to{
+                width: 800px;
+            }
+        } */
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="box">Animation box</div>
+    </div>
+
+
+
+
+
+
+    
+</body>
+</html>

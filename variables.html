@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+
+    
+
+    <style>
+
+        /* :root{
+            --navyblue:#210af1;
+        } */
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+
+
+            --navyblue:#210af1;
+          
+        }
+
+        .container{
+        
+            height: 400px;
+            width: 300px;
+            border: 1px solid brown;
+            background-color: goldenrod;
+
+
+            color: var(--navyblue);
+        }
+
+        .box{
+            border: 2px solid orchid;
+            background-color: aqua;
+            --navyblue: #210af1 ;
+
+
+            color: var(--navyblue);
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        hello ji kaise hain aap log?
+    
+
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+
+    </div>
+    
+</body>
+</html>
+
+<!-- dom- document obj model -->
+<!-- root means poore dom mai property apply ho jyegi -->

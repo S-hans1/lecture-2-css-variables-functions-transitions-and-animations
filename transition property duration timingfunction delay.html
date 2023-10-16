@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions in CSS</title>
+    <style>
+
+        *{
+           margin: 0;
+           padding: 0;
+        }
+
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: bisque;
+            border: 1px solid black;
+
+        }
+
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(43, 226, 131);
+            border: 2px solid black;
+            margin: 5em;
+
+
+            /* transition: property, duration, timing function, delay; */
+            transition: transform ;
+            transition-duration: 4s;
+            /* transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+            transition-timing-function: ease;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.5s;
+
+            transition: all 4s ease-in-out 0.5s;
+
+        }
+
+        .box:hover{
+            transform: translateX(900px) scale(2) rotate(360deg);
+            background-color:yellow;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">mai ek box hu</div>
+    </div>
+
+    
+    
+</body>
+</html>
+
+<!-- transition-timing-function:ease/linear/easein/easeout/ease in out/;
+by default it is ease -->
